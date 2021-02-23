@@ -1,4 +1,3 @@
-// let myString = "Hello world. \nOkay.";
 
 /**
  * Takes a string as input. 
@@ -27,7 +26,7 @@ function stringToBinary(inputString)
             }
         }
 
-        // Combining letters
+        // Combining letters.
         output += tempBinary + " ";
     }
 
@@ -45,11 +44,17 @@ function binaryToString(binaryInput)
     let characters = binaryInput.split(" ");
     let output = "";
 
+    // Converting each binary char into human readable char, and appending it.
     for (let i = 0 ; i  < characters.length ; i++)
     {
+        // Check for empty string.
+        if (characters[i] == "")
+            continue;
+        
         output += String.fromCharCode(parseInt(characters[i],2));
     }
 
+    // Returning results
     return output;
 }
 
