@@ -1,0 +1,71 @@
+/* Using Open Sans. */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root
+{
+    --primary: rgb(77, 77, 77);
+    --secondary: rgb(61, 61, 61);
+    --contrast: rgb(223, 223, 223);
+
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Default sizes. */
+p {font-size: 1rem;}
+h1 {font-size: 3rem;}
+h2 {font-size: 2.5rem;}
+h3 {font-size: 2rem;}
+h4 {font-size: 1.5rem;}
+
+html
+{
+    color: var(--contrast);
+}
+body 
+{
+    background-color: var(--secondary);
+}
+textarea 
+{
+    color: var(--primary);
+    background-color: var(--contrast);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title-header h1
+{
+    text-align: center;
+}
+
+.conversion-area
+{
+    border: 0.25rem solid black;
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+}
+.conversion-area textarea
+{
+    margin: auto;
+    width: 50%;
+    height: 24rem;
+
+    resize: none;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 720px)
+{
+    .conversion-area
+    {
+        flex-direction: column;
+    }
+    .conversion-area textarea
+    {
+        width: 100%;
+        height: 12rem;
+    }
+}
