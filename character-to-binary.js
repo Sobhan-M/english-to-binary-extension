@@ -71,11 +71,3 @@ outputArea.addEventListener("input",function() {
     let text = this.value;
     inputArea.value = binaryToString(text);
 });
-
-inputArea.addEventListener("load",function() {
-    this.value = "Successfully Loaded";
-});
-
-inputArea.addEventListener("unload",function() {
-    console.log("Leaving!");
-});
