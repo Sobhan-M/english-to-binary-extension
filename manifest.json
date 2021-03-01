@@ -1,23 +1,29 @@
 {
     "manifest_version": 2,
-    "name": "Binary To Text",
-    "version": "0.1",
+    "name": "Text To Binary",
+    "version": "1.0",
     "description": "Converts ASCII characters into their equivalent binary representation and vice versa.",
     "browser_action": {
         "default_popup": "index.html",
-        "default_title": "Binary To Text",
+        "default_title": "Text To Binary",
         "default_icon": {
             "16": "icon/16.png",
-            "32": "icon/32.png"
+            "32": "icon/32.png",
+            "128": "icon/128.png"
         },
         "theme_icons": [{
-            "light": "icons/16-light.png",
-            "dark": "icons/16.png",
+            "dark": "icon/16-light.png",
+            "light": "icon/16.png",
             "size": 16
           }, {
-            "light": "icons/32-light.png",
-            "dark": "icons/32.png",
+            "dark": "icon/32-light.png",
+            "light": "icon/32.png",
             "size": 32
           }]
+    },
+    "icons": {
+        "16": "icon/16.png",
+        "32": "icon/32.png",
+        "128": "icon/128.png"
     }
 }
