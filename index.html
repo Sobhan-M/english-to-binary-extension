@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Sobhan Mehrpour">
     <link href = "style.css" type = "text/css" rel = "stylesheet"/>
-    <title>Testing</title>
+    <link rel = "icon" href="icon/32.png" type="image/gif" sizes="32x32">
+    <title>Text-to-Binary Converstor</title>
 </head>
 <body>
+
     <header class = "title-header">
-        <h1>Text To Binary Conversion - Index</h1>
+        <h1>Text To Binary Convertor</h1>
     </header>
 
-    <section class = "conversion-area">
-        <textarea id = "input-text-js" ></textarea>
-        <textarea id = "output-text-js" ></textarea>
-    </section>
-    
+    <form>
+        <section class = "conversion-area">
+            <textarea id = "input-text-js" placeholder = "Binary is cool..."></textarea>
+            <textarea id = "output-text-js" placeholder = "01000010 01101001 01101110 01100001..."></textarea>
+        </section>
+
+        <section class = "button-area">
+            <button type = "button" class = "copy-binary-button" id = "copy-binary-button">Copy Binary</button>
+            <a target = "_blank" href = "index.html"><button type = "button" class = "new-tab-button">Open On New Tab</button></a>
+            <button type = "reset" class = "reset-button" id = "reset-button">Reset</button>
+        </section>
+    </form>
+
     <script type = "text/JavaScript" src = "character-to-binary.js"></script>
-    <a target = "_blank" href = "index.html">Open On New Page</a>
+    <script type = "text/JavaScript" src = "button-functions.js"></script>
+    
 </body>
 </html>
