@@ -2,7 +2,7 @@
 
 ## Description
 
-An extension that can be used to turn text into binary. The program takes each character’s UNICODE value and converts it into binary. It’s a very simple and neat program packed into an extension.
+An extension that you can use to turn text into binary. The program takes each character’s UNICODE value and converts it into binary. It’s a very simple and neat program packed into an extension.
 
 ## Inspiration
 
